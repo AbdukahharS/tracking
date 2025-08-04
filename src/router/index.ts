@@ -1,35 +1,57 @@
-import Home from "@/pages/HomePage.vue";
 import { createRouter, createWebHistory } from "vue-router";
-// import SearchPage from '../pages/search/SearchPage.vue';
-// import Login from "@/pages/log-in/login.vue";
-// import RoadmapPage from '../pages/roudmap/RoadmapPage.vue';
-// import GidPage from '../pages/gid/GidPage.vue';
-// import LandmarkDetails from '../pages/gid/LandmarkDetails.vue';
-// import LandmarkMoreDetails from '../pages/gid/LandmarkMoreDetails.vue';
-// import SearchOut from "@/pages/search/search-out/SearchOut.vue";
-// // import SearchOutMore from "@/pages/search/search-out-more/SearchOutMore.vue";
-// import ProfilePage from "/src/pages/profile/profile.vue";
-// import FriendsPage from '@/pages/friends/Friends.vue'
-// import FriendDetails from '@/pages/friends/FriendDetails.vue';
-// import  RegistrationPage from '@/pages/log-in/registration.vue'
-// import PoiComponent from "@/pages/poi/PoiComponent.vue";
-// import PoiBusStop from '@/pages/poi/PoiBusStop.vue';
-// import NotFound from '@/pages/not-found/not-found.vue';
+import Home from "@/pages/HomePage.vue";
 
 const routes = [
   {
     path: "/",
     name: "Home",
     component: Home,
-    meta: {
-      title: "Home",
-    },
   },
-  // {
-  //   path: "/:pathMatch(.*)*",
-  //   name: "NotFound",
-  //   component: NotFound,
-  // },
+  {
+    path: "/routing",
+    name: "Routing",
+    component: () => {},
+  },
+  {
+    path: "/chat",
+    name: "Chat",
+    component: () => {},
+  },
+  {
+    path: "/clipboard",
+    name: "Clipboard",
+    component: () => {},
+  },
+  {
+    path: "/wallet",
+    name: "Wallet",
+    component: () => {},
+  },
+  {
+    path: "/calendar",
+    name: "Calendar",
+    component: () => {},
+  },
+  {
+    path: "/premium",
+    name: "Premium",
+    component: () => {},
+  },
+  {
+    path: "/user",
+    name: "User",
+    component: () => {},
+  },
+  {
+    path: "/settings",
+    name: "Settings",
+    component: () => {},
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: () => {},
+  },
 ];
 
 const router = createRouter({
