@@ -1,0 +1,86 @@
+/* ===== Initial CSS Cleanup for Vue Project ===== */
+
+/* Box-sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default body styles */
+body {
+  line-height: 1.5;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Set pointer cursor for interactive elements */
+button, [role="button"], a {
+  cursor: pointer;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+}
+
+/* Inherit fonts for form elements */
+input, textarea, select, button {
+  font: inherit;
+  color: inherit;
+}
+
+/* Remove all outlines but keep them on focus-visible */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid #2684FF;
+  outline-offset: 2px;
+}
+
+/* Make images easier to work with */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Avoid overflow issues on mobile */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+
+  aside {
+    width: 160px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 42px 0;
+  }
+
+  main {
+    flex: 1;
+    overflow-y: auto;
+    background: #F8F8F8;
+  }
+}
