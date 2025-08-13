@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 import { useRoute } from "vue-router";
 import Logo from "@/assets/logo.svg";
-import DashBoard from "@/assets/dashboard.svg";
-import Routing from "@/assets/routing.svg";
-import Calendar from "@/assets/calendar.svg";
-import Chat from "@/assets/chat.svg";
-import Clipboard from "@/assets/clipboard.svg";
-import Premium from "@/assets/premium.svg";
-import Settings from "@/assets/settings.svg";
-import User from "@/assets/user-circle.svg";
-import Wallet from "@/assets/wallet.svg";
+import DashBoard from "@/assets/icons/dashboard.svg";
+import Routing from "@/assets/icons/routing.svg";
+import Calendar from "@/assets/icons/calendar.svg";
+import Chat from "@/assets/icons/chat.svg";
+import Clipboard from "@/assets/icons/clipboard.svg";
+import Premium from "@/assets/icons/premium.svg";
+import Settings from "@/assets/icons/settings.svg";
+import User from "@/assets/icons/user-circle.svg";
+import Wallet from "@/assets/icons/wallet.svg";
 
 const mainLinks = [
   {
