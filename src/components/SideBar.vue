@@ -18,7 +18,7 @@ const mainLinks = [
   },
   {
     Icon: Routing,
-    page: "Routing",
+    page: "Delivery",
   },
   {
     Icon: Chat,
