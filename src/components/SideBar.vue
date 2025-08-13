@@ -26,7 +26,7 @@ const mainLinks = [
   },
   {
     Icon: Clipboard,
-    page: "Clipboard",
+    page: "List",
   },
   {
     Icon: Wallet,

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/pages/HomePage.vue";
 import DeliveryPage from "@/pages/DeliveryPage.vue";
+import ListPage from "@/pages/ListPage.vue";
 
 const routes = [
   {
@@ -19,9 +20,9 @@ const routes = [
     component: () => {},
   },
   {
-    path: "/clipboard",
-    name: "Clipboard",
-    component: () => {},
+    path: "/list",
+    name: "List",
+    component: ListPage,
   },
   {
     path: "/wallet",
