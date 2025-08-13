@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/pages/HomePage.vue";
 import DeliveryPage from "@/pages/DeliveryPage.vue";
 import ListPage from "@/pages/ListPage.vue";
+import FinancePage from "@/pages/FinancePage.vue";
 
 const routes = [
   {
@@ -25,9 +26,9 @@ const routes = [
     component: ListPage,
   },
   {
-    path: "/wallet",
-    name: "Wallet",
-    component: () => {},
+    path: "/finance",
+    name: "Finance",
+    component: FinancePage,
   },
   {
     path: "/calendar",

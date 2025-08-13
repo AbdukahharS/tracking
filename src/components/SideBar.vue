@@ -30,7 +30,7 @@ const mainLinks = [
   },
   {
     Icon: Wallet,
-    page: "Wallet",
+    page: "Finance",
   },
   {
     Icon: Calendar,

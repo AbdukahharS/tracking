@@ -16,70 +16,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>XB550012529</td>
-          <td>AB-022</td>
-          <td><span class="status no-warranty">NO WARRANTY</span></td>
-          <td>L0805 INJET PRINTER</td>
-          <td>Установка</td>
-          <td>-- -- --</td>
-          <td>-- -- --</td>
-        </tr>
-        <tr>
-          <td>XB550012529</td>
-          <td>AB-022</td>
-          <td><span class="status no-warranty">NO WARRANTY</span></td>
-          <td>L0805 INJET PRINTER</td>
-          <td>Установка</td>
-          <td>-- -- --</td>
-          <td>-- -- --</td>
-        </tr>
-        <tr>
-          <td>XB550012529</td>
-          <td>AB-022</td>
-          <td><span class="status no-warranty">NO WARRANTY</span></td>
-          <td>L0805 INJET PRINTER</td>
-          <td>Установка</td>
-          <td>-- -- --</td>
-          <td>-- -- --</td>
-        </tr>
-        <tr>
-          <td>XB550012529</td>
-          <td>AB-022</td>
-          <td><span class="status no-warranty">NO WARRANTY</span></td>
-          <td>L0805 INJET PRINTER</td>
-          <td>Установка</td>
-          <td>-- -- --</td>
-          <td>-- -- --</td>
-        </tr>
-        <tr>
-          <td>XB550012529</td>
-          <td>AB-022</td>
-          <td><span class="status no-warranty">NO WARRANTY</span></td>
-          <td>L0805 INJET PRINTER</td>
-          <td>Установка</td>
-          <td>-- -- --</td>
-          <td>-- -- --</td>
-        </tr>
-        <tr>
-          <td>XB550012529</td>
-          <td>AB-022</td>
-          <td><span class="status no-warranty">NO WARRANTY</span></td>
-          <td>L0805 INJET PRINTER</td>
-          <td>Установка</td>
-          <td>-- -- --</td>
-          <td>-- -- --</td>
-        </tr>
-        <tr>
-          <td>XB550012529</td>
-          <td>AB-022</td>
-          <td><span class="status no-warranty">NO WARRANTY</span></td>
-          <td>L0805 INJET PRINTER</td>
-          <td>Установка</td>
-          <td>-- -- --</td>
-          <td>-- -- --</td>
-        </tr>
-        <tr>
+        <tr v-for="value in 9" :key="value">
           <td>XB550012529</td>
           <td>AB-022</td>
           <td><span class="status no-warranty">NO WARRANTY</span></td>
