@@ -3,6 +3,7 @@ import Home from "@/pages/HomePage.vue";
 import DeliveryPage from "@/pages/DeliveryPage.vue";
 import ListPage from "@/pages/ListPage.vue";
 import FinancePage from "@/pages/FinancePage.vue";
+import ChatPage from "@/pages/ChatPage.vue";
 
 const routes = [
   {
@@ -18,7 +19,7 @@ const routes = [
   {
     path: "/chat",
     name: "Chat",
-    component: () => {},
+    component: ChatPage,
   },
   {
     path: "/list",

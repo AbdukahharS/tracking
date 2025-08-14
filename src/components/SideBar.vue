@@ -57,51 +57,59 @@ const route = useRoute();
 </script>
 
 <template>
-  <aside>
-    <Logo />
-    <div>
-      <RouterLink v-for="(link, i) in mainLinks" :to="{ name: link.page }" :key="i">
-        <component :is="link.Icon" :class="route.name === link.page ? 'active icon' : 'icon'" />
-      </RouterLink>
-    </div>
-    <div>
-      <RouterLink v-for="(link, i) in profileLinks" :to="{ name: link.page }" :key="i">
-        <component :is="link.Icon" :class="route.name === link.page ? 'active icon' : 'icon'" />
-      </RouterLink>
-    </div>
-  </aside>
+  <div class="wrapper">
+    <aside>
+      <Logo />
+      <div>
+        <RouterLink v-for="(link, i) in mainLinks" :to="{ name: link.page }" :key="i">
+          <component :is="link.Icon" :class="route.name === link.page ? 'active icon' : 'icon'" />
+        </RouterLink>
+      </div>
+      <div>
+        <RouterLink v-for="(link, i) in profileLinks" :to="{ name: link.page }" :key="i">
+          <component :is="link.Icon" :class="route.name === link.page ? 'active icon' : 'icon'" />
+        </RouterLink>
+      </div>
+    </aside>
+  </div>
 </template>
 
 <style scoped>
-aside {
+.wrapper {
+  position: relative;
   width: 160px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 42px 0;
-  gap: 100px;
 
-  div {
+  aside {
+    width: 160px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 36px;
+    padding: 42px 0;
+    gap: 100px;
+    position: fixed;
 
-    .icon {
-      color: #bcbcbc;
-      width: 32px;
-      height: 32px;
-      transition: all 0.25s ease-in-out;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 36px;
 
-      &.active {
-        color: #5a32ea;
-        scale: 1.2;
-      }
+      .icon {
+        color: #bcbcbc;
+        width: 32px;
+        height: 32px;
+        transition: all 0.25s ease-in-out;
 
-      &:hover {
-        scale: 1.1;
-        color: #8b77d3;
+        &.active {
+          color: #5a32ea;
+          scale: 1.2;
+        }
+
+        &:hover {
+          scale: 1.1;
+          color: #8b77d3;
+        }
       }
     }
   }
