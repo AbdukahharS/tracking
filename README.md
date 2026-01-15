@@ -1,39 +1,67 @@
-# tracking
+# Tracking
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue 3 tracking application for monitoring and managing deliveries, finances, and communications.
 
-## Recommended IDE Setup
+## Tech Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue 3 (Composition API)
+- TypeScript
+- Vite
+- Vue Router 4
+- Pinia (state management)
+- ApexCharts (data visualization)
+- vite-svg-loader
 
-## Type Support for `.vue` Imports in TS
+## Features
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- **Dashboard** - Overview of tracking data
+- **List View** - Browse and manage tracked items
+- **Finance Tracking** - Financial analytics with charts
+- **Delivery Management** - Track and manage deliveries
+- **Chat** - Communication features
+- **Sidebar Navigation** - Easy access to all sections
 
-## Customize configuration
+## Getting Started
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+# Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# Start development server
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
+# Type-check and build
 npm run build
-```
 
-### Lint with [ESLint](https://eslint.org/)
+# Preview production build
+npm run preview
 
-```sh
+# Run linting
 npm run lint
 ```
+
+## Project Structure
+
+```
+src/
+├── components/             # Reusable components
+│   ├── SideBar.vue         # Navigation sidebar
+│   └── BaseCheckBox.vue    # Form input component
+├── pages/                  # Route views
+│   ├── HomePage.vue        # Dashboard
+│   ├── ListPage.vue        # List view
+│   ├── FinancePage.vue     # Finance tracking with charts
+│   ├── DeliveryPage.vue    # Delivery management
+│   └── ChatPage.vue        # Chat/messaging
+├── router/                 # Route definitions
+├── stores/                 # Pinia stores
+├── assets/                 # Static assets
+├── App.vue                 # Root component
+└── main.ts                 # Entry point
+```
+
+## Notes
+
+- Requires Node.js 20.19.0+ or 22.12.0+
+- Uses TypeScript project references
+- SVG icons loaded via vite-svg-loader
